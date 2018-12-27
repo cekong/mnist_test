@@ -41,7 +41,7 @@ with tf.Session() as sess:
                 y1: batch[1],
                 keep_prob: 1.0
             })
-            print("setp %d, train accuracy=%d" % (i, train_accuracy))
+            print("setp %d, train accuracy=%g" % (i, train_accuracy))
         sess.run(
             train_step, feed_dict={
                 x: batch[0],
